@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Hola mundo con Vue.js</title>
+</head>
+<body>
+    <div id="app" class="container mt-5">
+
+        <div :class="['p-3', 'text-white', fondo]">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, reprehenderit dolor ipsa repudiandae cumque et consequatur neque officiis itaque id aperiam voluptatem architecto reiciendis quae quia quisquam iste cum odit.</p>
+        </div>
+        <input type="text" class="form-control my-3" v-model="fondo">
+    
+        <div class="text-white p-3" :class="{'bg-info' : color, 'bg-success': !color} ">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quia suscipit sint sed! Voluptas ducimus in itaque, ipsam doloribus maiores perferendis quas eum eius iusto debitis, sit nesciunt! Possimus, eum.
+            </p>
+        </div>
+    
+        <button class="btn btn-primary" @click="color = !color">Cambiar color</button>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="02.js"></script>
+</body>
+</html>
