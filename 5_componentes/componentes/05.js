@@ -1,9 +1,24 @@
-Vue.component('saludo', {
+Vue.component('titulo', {
     template: //html 
     `
     <div>            
-        <h1> {{saludo}} </h1>
-        <h3> {{saludo}} </h3>
+        <h1>numero {{ $store.state.numero }} </h1>
+        <hijo></hijo>
+    </div>
+    `,
+    data() {
+        return {
+
+        }
+    }
+
+} )
+
+Vue.component('hijo', {
+    template: //html 
+    `
+    <div>            
+        <button> + </button>
     </div>
     `,
     data() {
